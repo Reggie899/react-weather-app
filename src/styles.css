@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/092/original/Cheese.JPG?1627468441);
+    background-attachment: fixed;
+    font-family: monospace;
+  }
+  
+  a.active {
+    color: black;
+    cursor: default;
+    text-decoration-line: none;
+  }
+  a.active:hover {
+    text-decoration-line: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

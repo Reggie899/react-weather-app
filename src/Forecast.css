@@ -1,0 +1,16 @@
+.Forecast {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .Forecast .list-group-item {
+    background: #fdef24;
+    border-color: #fdef24;
+  }
+  
+  .card {
+    border: none;
+  }
+  

@@ -1,0 +1,24 @@
+.SearchSection {
+    width: 100%;
+    display: flex;
+    flex: column;
+    align-items: center;
+    padding: 2%;
+  }
+  
+  .SearchSection .btn-light {
+    margin: 1% 1% 1% 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+    border: solid;
+    border-color: #d1dcf0;
+    opacity: 70%;
+    background-color: #d1dcf0;
+  }
+  
+  @media (min-width: 1000px) {
+    .SearchSection {
+      margin-left: 10%;
+    }
+  }
+  

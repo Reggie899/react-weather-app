@@ -1,0 +1,30 @@
+.Footer {
+    text-align: center;
+  }
+  
+  .Footer .Cheese {
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/031/604/original/Bildschirmfoto_2022-04-11_um_17.21.14.png?1649690574");
+    background-size: 300px;
+    background-repeat: none;
+    position: relative;
+  }
+  
+  .Footer .LinkGitHub {
+    position: absolute;
+    text-decoration: underline;
+    top: 76%;
+    left: 35%;
+    color: rgb(110, 79, 20);
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: monospace;
+  }
+  
+  .Footer .LinkGitHub:hover {
+    text-decoration: none;
+    color: rgba(117, 117, 112, 0.466);
+  }
+  

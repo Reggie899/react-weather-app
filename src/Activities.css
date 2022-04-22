@@ -1,0 +1,72 @@
+.Activities {
+    text-align: center;
+  }
+  
+  .Activities .toDo {
+    width: 100%;
+    margin: 100px 10% 0 0;
+    border: width 1px;
+    border: solid;
+    background: #fdef24;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    opacity: 90%;
+    padding: 0 20px 0 10px;
+    box-shadow: 8px 14px 10px grey;
+  }
+  
+  .Activities .titleToDo {
+    font-family: "Indie Flower", cursive;
+    font-size: 26px;
+    font-weight: bolder;
+    border: width 1px;
+    border: solid;
+    border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    background: #edf3f1;
+    margin-top: 5px;
+    padding: 5px;
+    margin: 25px 15px 15px 15px;
+    opacity: 75%;
+  }
+  
+  .Activities .ideas {
+    padding-top: 20px;
+    padding-left: 55px;
+    padding-right: -10px;
+    font-family: "Indie Flower", cursive;
+    font-size: 24px;
+    opacity: 80%;
+    box-shadow: 60%;
+  }
+  .Activities .idea1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .Activities .idea2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .Activities .idea3 {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+  
+  .Activities ul {
+    list-style: none;
+  }
+  
+  @media (min-width: 900px) {
+    .Activities {
+      margin: 10% 5% 10% 35%;
+      width: 39vw;
+      text-align: left;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .Activities {
+      margin: 10% 5% 10% 33%;
+      width: 35vw;
+      text-align: left;
+    }
+  }
+  

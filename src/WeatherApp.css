@@ -1,0 +1,17 @@
+.WeatherApp .weather {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fdef24;
+    opacity: 85%;
+    margin-top: 5%;
+  }
+  
+  @media (min-width: 900px) {
+    .WeatherApp .weather {
+      margin: 2% 5% 10% 25%;
+      width: 50vw;
+    }
+  }
+  
