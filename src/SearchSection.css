@@ -29,6 +29,8 @@
       padding-left: 5%;
       padding-right: 5%;
       margin: 1% 1% 1% 25%;
-
+    }
+    input {
+      margin-left: 2%;
     }
    }
