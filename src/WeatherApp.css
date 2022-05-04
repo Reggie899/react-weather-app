@@ -12,12 +12,10 @@ justify-content: center;
     align-items: center;
     background: #fdef24;
     opacity: 85%;
-    margin-top: 5%;
   }
   
-  @media (min-width: 900px) {
+  @media (min-width: 1200px) {
     .WeatherApp .weather {
-      margin: 2% 5% 10% 25%;
       width: 50vw;
     }
   }

@@ -1,35 +1,61 @@
 .Forecast {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .Forecast .list-group-item, .cityForecast {
-    background: #fdef24;
-    border-color: #fdef24;
-    /* border: 2px magenta solid; */
-    padding: 1% 1% 0 1%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    /* border: 2px magenta solid; */
-    margin: 1.5%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
-  }
-  
-  .card {
-        border: none;
-        width: 60%;
+.Forecast .list-group-item,
+.cityForecast {
+  background: #fdef24;
+  border-color: #fdef24;
+  /* border: 2px magenta solid; */
+  padding: 1% 1% 0 1%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* border: 2px magenta solid; */
+  margin: 1.5%;
 
-  }
+}
 
+.card {
+  border: none;
+  width: 60%;
+
+}
+
+.cityForecast {
+  color: magenta;
+  background-color: #fdef24;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.8em;
+  padding: 3% 0;
+}
+
+@media (min-width: 800px) {
   .cityForecast {
-    color: magenta;
-    background-color: #fdef24;
-    font-family: "Indie Flower", cursive;
-    font-size: 1.8em;
-    padding: 3% 0;
+    display: none;
   }
 
-  
+  /* .Forecast {
+    min-width: 130%;
+  } */
+
+  .Forecast li {
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid magenta;
+    min-width: 40%;
+  }
+
+  .pic {
+    height: 30px;
+    width: 30px;
+  }
+}

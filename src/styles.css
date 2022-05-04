@@ -7,6 +7,7 @@
     background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/092/original/Cheese.JPG?1627468441);
     background-attachment: fixed;
     font-family: monospace;
+    padding-top: 10%;
   }
   
   a.active {

@@ -7,12 +7,14 @@ justify-content: center;
   
   .Activities .toDo {
     width: 80%;
-    margin: 100px 0 0 0;
+    /* margin-left: -20%; */
     border: width 1px;
     border: solid;
     background: #fdef24;
     border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
     opacity: 90%;
+    /* border: 1px solid magenta; */
+
     padding: 0 20px 0 10px;
     box-shadow: 8px 14px 10px grey;
   }
@@ -57,19 +59,13 @@ justify-content: center;
     list-style: none;
   }
   
-  /* @media (min-width: 900px) {
+  @media (min-width: 900px) {
     .Activities {
-      margin: 10% 5% 10% 35%;
-      width: 39vw;
+      margin-left: -30px;
+      /* width: 39vw; */
       text-align: left;
     }
   }
   
-  @media (min-width: 1200px) {
-    .Activities {
-      margin: 10% 5% 10% 33%;
-      width: 35vw;
-      text-align: left;
-    }
-  }
-   */
+  
+  
