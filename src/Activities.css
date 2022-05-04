@@ -57,7 +57,7 @@ justify-content: center;
     list-style: none;
   }
   
-  @media (min-width: 900px) {
+  /* @media (min-width: 900px) {
     .Activities {
       margin: 10% 5% 10% 35%;
       width: 39vw;
@@ -72,4 +72,4 @@ justify-content: center;
       text-align: left;
     }
   }
-  
+   */

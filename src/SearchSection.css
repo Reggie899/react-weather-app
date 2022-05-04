@@ -16,9 +16,17 @@
     background-color: #d1dcf0;
   }
   
-  @media (min-width: 1000px) {
+  /* @media (min-width: 1000px) {
     .SearchSection {
       margin-left: 10%;
     }
   }
-  
+   */
+
+
+   @media (max-width: 500px) {
+    .SearchSection .btn-light {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+   }
