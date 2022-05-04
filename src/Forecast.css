@@ -5,7 +5,7 @@
     width: 100%;
   }
   
-  .Forecast .list-group-item {
+  .Forecast .list-group-item, .cityForecast {
     background: #fdef24;
     border-color: #fdef24;
     /* border: 2px magenta solid; */
@@ -13,20 +13,23 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    
+    /* border: 2px magenta solid; */
+    margin: 1.5%;
+
   }
   
   .card {
         border: none;
         width: 60%;
-        border: 2px magenta solid;
+
   }
 
   .cityForecast {
     color: magenta;
     background-color: #fdef24;
-    padding: 3% 0 6% 0;
     font-family: "Indie Flower", cursive;
-    font-size: 20px;
-    text-align: center;
+    font-size: 1.8em;
+    padding: 3% 0;
   }
+
+  
