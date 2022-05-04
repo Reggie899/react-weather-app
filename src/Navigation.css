@@ -1,14 +1,18 @@
 .Navigation {
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     margin-top: 10%;
     justify-content: space-around;
     border-radius: 3%;
+    /* border: 2px solid magenta; */
   }
   
   .Navigation .NavButton {
     background: #edf3f1;
+    border: 5px solid #fdef24;
+    opacity: 85%;
+
   }
   
   .Navigation a {

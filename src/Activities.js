@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Activities.css";
 
-export default function Acitivities(props) {
+export default function Acitivities(props) { 
   return (
     <div className="Activities">
       <div className="toDo" id="activities">
