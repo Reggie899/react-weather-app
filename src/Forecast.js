@@ -7,6 +7,8 @@ export default function Forecast(props) {
     <div className="Forecast">
       <div className="card">
         <ul className="list-group list-group-flush" id="forecast">
+        <div className="cityForecast">YOUR LOCATION :</div>
+
           <li className="list-group-item">
             {" "}
             <span className="weather-forecast-date">{props.weekDay1}:</span>
