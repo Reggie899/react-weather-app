@@ -6,7 +6,8 @@ import "./WeatherApp.css";
 import SearchSection from "./SearchSection";
 import InfoOutput from "./InfoOutput";
 
-export default function WeatherApp(props) {
+export default function WeatherApp() {
+  // UseContext für WeatherData in App.js installieren -> Acitivtäten 
   const [weatherData, setWeatherData] = useState({ready: false});
   const [city, setCity] = useState("Miami");
 
