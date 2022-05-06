@@ -3,13 +3,19 @@ import React from "react";
 import "./InfoOutput.css";
 
 export default function InfoOutput(props) {
+let minutes = props.currentMinutes; 
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
+
+
   return (
     <div className="InfoOutput">
       <div className="cityDisplay" id="cityDisplay1">
         {props.yourLocation}{" "}
       </div>
       <div className="additionalInfo" id="currentTime">
-        {props.currentTime} <br />
+        {props.currentHours}:{minutes} <br />
         <span id="descritpion">{props.currentDescription}</span>
       </div>
       <div className="todayTemp">

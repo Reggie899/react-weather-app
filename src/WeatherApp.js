@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import axios from "axios";
 
 
@@ -6,8 +6,14 @@ import "./WeatherApp.css";
 import SearchSection from "./SearchSection";
 import InfoOutput from "./InfoOutput";
 
-export default function WeatherApp() {
+export default function WeatherApp(props) {
   const [weatherData, setWeatherData] = useState({ready: false});
+  const [city, setCity] = useState("Miami");
+
+// const handlerSubmit = (event) => {
+// alert("Hello");
+// }
+
 
   function handleResponse(response) {
     console.log(response.data);
@@ -21,17 +27,24 @@ todayMin: response.data.main.temp_min,
 todayMax: response.data.main.temp_max, 
 description:  response.data.weather[0].main,
 icon: response.data.weather[0].icon,
-time: "13:20",
+time: new Date(response.data.dt * 1000),
   });}
+
+useEffect(() => {
+  const apiKey = "e49d8a2ceb4c7b4bb750c995e9734044";
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(handleResponse);
+}, [city])
 
 if (weatherData.ready) {
   return (
     <div className="WeatherApp">
       <div className="weather">
-        <SearchSection />
+        <SearchSection city={city} setCity={setCity} />
         <InfoOutput 
           yourLocation={weatherData.city}
-          currentTime={weatherData.time}
+          currentHours={weatherData.time.getHours()}
+          currentMinutes={weatherData.time.getMinutes()}
           currentDescription={weatherData.description}
           todayTemp={Math.round(weatherData.temperature)}
           todayWeatherPic={`http://openweathermap.org/img/wn/${weatherData.icon}@2x.png`}
@@ -45,7 +58,6 @@ if (weatherData.ready) {
     </div>
   );
  } else {
-  let city = "Miami";
   const apiKey = "e49d8a2ceb4c7b4bb750c995e9734044";
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(handleResponse);
