@@ -1,13 +1,32 @@
-import React from "react";
+import React, {useContext, useEffect, useState} from "react";
+import ApiDatatContext from "./ApiDataContext"; 
+import axios from "axios";
 
 import "./Forecast.css";
  
 export default function Forecast(props) {
+  const [weatherData, setWeatherData] = useContext(ApiDatatContext);
+  
+  function handleResponseForecast(response) {
+    console.log("forecast:", response);
+  }
+  
+  useEffect(() => {
+    let forecastUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${weatherData.lat}&lon=${weatherData.lon}&appid=e49d8a2ceb4c7b4bb750c995e9734044`
+    axios.get(forecastUrl).then(handleResponseForecast);
+
+  },[weatherData.city])
+  
+
+
+
+
+
   return (
     <div className="Forecast">
       <div className="card">
         <ul className="list-group list-group-flush" id="forecast">
-        <div className="cityForecast">YOUR LOCATION :</div>
+        <div className="cityForecast">YOUR LOCATION : {weatherData.city}</div>
 
           <li className="list-group-item">
             {" "}

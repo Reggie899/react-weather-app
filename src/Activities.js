@@ -1,7 +1,7 @@
 import React, {useContext, useEffect, useState} from "react";
 
 import "./Activities.css";
-import ApiDatatContext from "./ApiDataContext";
+import ApiDatatContext from "./ApiDataContext"; 
 
 export default function Acitivities() { 
   const [weatherData, setWeatherData] = useContext(ApiDatatContext);
@@ -49,7 +49,10 @@ export default function Acitivities() {
     //   setIdea1("Sleep 😴");
     //   setIdea2("Brushing your teeth 🪥");
     //   setIdea3("Making a wish 🧞‍♂️");
-    // }
+    // } 
+    console.log("lon:", weatherData.lon);
+    console.log("lat:", weatherData.lat);
+
   }, [weatherData.icon])
 
   return (

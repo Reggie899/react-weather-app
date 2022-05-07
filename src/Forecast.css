@@ -50,7 +50,7 @@
   .card {
     display: flex;
     flex-direction: column;
-    border: 2px solid magenta;
+    border-bottom: 2px solid magenta;
     min-width: 40%;
   }
 

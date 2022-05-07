@@ -25,6 +25,8 @@ todayMax: response.data.main.temp_max,
 description:  response.data.weather[0].main,
 icon: response.data.weather[0].icon,
 time: new Date(response.data.dt * 1000),
+lon: response.data.coord.lon,
+lat: response.data.coord.lat,
   });}
 
 useEffect(() => {
