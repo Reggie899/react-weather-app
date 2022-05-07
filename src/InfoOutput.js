@@ -25,7 +25,7 @@ setUnit(!unit);
         <span id="descritpion">{props.currentDescription}</span>
       </div>
       <div className="todayTemp">
-        <span id="todayTemp">{unit ? props.todayTemp : (Math.round((props.todayTemp * 9) / 5 + 32))}</span>
+        <span id="todayTemp">{unit ? props.todayTemp : (Math.round((props.todayTemp * 9) / 5 + 32)) }</span>
         <span className="units">
           <a onClick={() => unitconverter()} id="celsiusLink" className={unit ? "active" : ""}>
             °C{" "}

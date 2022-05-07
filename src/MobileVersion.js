@@ -74,11 +74,7 @@ const ButtonIdeas = () => (  <button  onClick={() => { setShowMain(false);setSho
           weatherForecastTemperatureMin6={14}
           weatherForecastTemperatureMax6={20}
           /> : null}
-        { showIdeas ? <Activities
-        idea1={"Trying out a new sort of 🍧"}
-        idea2={"Riding your 🚲"}
-        idea3={"Taking pictures outside 📷"}
-      /> : null }
+        { showIdeas ? <Activities /> : null }
         <div className="Navigation">
         {showForecast ? null : <ButtonForecast />}
         {showMain ? null : <ButtonMain />}

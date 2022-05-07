@@ -10,11 +10,7 @@ export default function WebVersion() {
         <div className="container">
             <div className="row">
             <div className="col-4">
-            <Activities
-        idea1={"Trying out a new sort of 🍧"}
-        idea2={"Riding your 🚲"}
-        idea3={"Taking pictures outside 📷"}
-      /> 
+            <Activities/> 
             </div>
       <div className="col-6">
 <WeatherApp />  

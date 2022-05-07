@@ -1,20 +1,16 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, useContext} from "react";
 import axios from "axios";
 
 
 import "./WeatherApp.css";
 import SearchSection from "./SearchSection";
 import InfoOutput from "./InfoOutput";
+import ApiDatatContext from "./ApiDataContext";
 
 export default function WeatherApp() {
   // UseContext für WeatherData in App.js installieren -> Acitivtäten 
-  const [weatherData, setWeatherData] = useState({ready: false});
+  const [weatherData, setWeatherData] = useContext(ApiDatatContext);
   const [city, setCity] = useState("Miami");
-
-// const handlerSubmit = (event) => {
-// alert("Hello");
-// }
-
 
   function handleResponse(response) {
     console.log(response.data);
