@@ -39,7 +39,7 @@ const ButtonForecast = () => (
 
 ///////////// VIEW IDEAS //////////////////
 
-const ButtonIdeas = () => (  <button  onClick={() => { setShowMain(false);setShowIdeas(true);setShowForecast(false);   window.scrollTo(0, 0)
+const ButtonIdeas = () => (  <button  onClick={() => { window.scrollTo(0, 0); setShowMain(false);setShowIdeas(true);setShowForecast(false);   
 }} className="btn btn-light NavButton">
 <a href="#activities">
   {" "}
