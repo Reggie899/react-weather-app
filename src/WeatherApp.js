@@ -10,7 +10,7 @@ import ApiDatatContext from "./ApiDataContext";
 export default function WeatherApp() {
   // UseContext für WeatherData in App.js installieren -> Acitivtäten 
   const [weatherData, setWeatherData] = useContext(ApiDatatContext);
-  const [city, setCity] = useState("Miami");
+  const [city, setCity] = useState("");
 
   function handleResponse(response) {
     console.log(response.data);
@@ -35,11 +35,11 @@ useEffect(() => {
   axios.get(apiUrl).then(handleResponse);
 }, [city])
 
-if (weatherData.ready) {
-  return (
-    <div className="WeatherApp">
+
+const WeatherBox = () => (
+<div className="WeatherApp">
       <div className="weather">
-        <SearchSection city={city} setCity={setCity} />
+      {/* <SearchSection city={city} setCity={setCity} /> */}
         <InfoOutput 
           yourLocation={weatherData.city}
           currentHours={weatherData.time.getHours()}
@@ -52,15 +52,15 @@ if (weatherData.ready) {
           humidity={weatherData.humidity}
           wind={Math.round(weatherData.wind)}
         />
-     
       </div>
     </div>
-  );
- } else {
-  const apiKey = "e49d8a2ceb4c7b4bb750c995e9734044";
-  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(handleResponse);
+)
+
  
- return "loading ..."
- }
+ return (
+   <div>
+  <SearchSection city={city} setCity={setCity} />  
+  {weatherData.ready ? <WeatherBox /> : null }
+  </div>
+ )
 }

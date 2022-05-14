@@ -4,10 +4,10 @@
   width: 100%;
 }
 
-.Forecast .list-group-item,
+.Forecast,
 .cityForecast {
-  background: #fdef24;
-  border-color: #fdef24;
+  /* background: #dfded1bf; */
+  border-color: #242bfd;
   /* border: 2px magenta solid; */
   padding: 1% 1% 0 1%;
   width: 100%;
@@ -15,17 +15,19 @@
   justify-content: center;
   /* border: 2px magenta solid; */
   margin: 1.5%;
-
 }
+
+.list-group-item {
+margin: 6%;
+min-width: 80px}
 
 .card {
   border: none;
-  width: 60%;
-
+  background-color: #fdee24b8;
+min-width: 80px;
 }
 
 .cityForecast {
-  color: magenta;
   background-color: #fdef24;
   font-family: "Indie Flower", cursive;
   font-size: 1.8em;
