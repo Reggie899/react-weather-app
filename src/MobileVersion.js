@@ -1,8 +1,10 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useContext} from "react";
 import WeatherApp from "./WeatherApp";
 import Forecast from "./Forecast";
 import Activities from "./Activities";
 import "./Navigation.css";
+import ApiDatatContext from "./ApiDataContext";
+
 
 export default function MobileVersion() {
 
@@ -12,6 +14,8 @@ export default function MobileVersion() {
 const [showMain, setShowMain] = useState(true);
 const [showForecast, setShowForecast] = useState (false);
 const [showIdeas, setShowIdeas] = useState (false);
+const [weatherData, setWeatherData] = useContext(ApiDatatContext);
+
 
 ///////////// VIEW MAIN //////////////////
 
@@ -47,14 +51,15 @@ const ButtonIdeas = () => (  <button  onClick={() => { setShowMain(false);setSho
 
     return (
         <div>
+         { weatherData.ready ? null : <div style={{fontFamily: "Indie Flower, cursive", fontSize: "4em", fontWeight: "bolder", color: "magenta", transform: "rotate(-7deg)", margin: "-5% 5% 5%"}}>Weather App</div>}
          { showMain ? <WeatherApp /> : null }
-         { <Forecast />}
-        { showIdeas ? <Activities /> : null }
-        <div className="Navigation">
-        {showForecast ? null : <ButtonForecast />}
-        {showMain ? null : <ButtonMain />}
-        {showIdeas ? null : <ButtonIdeas/>}
-         </div> 
+         { showForecast ? <Forecast /> : null}
+         { showIdeas ? <Activities /> : null }
+         { weatherData.ready ? <div className="Navigation">
+         {showForecast ? null : <ButtonForecast />}
+         { showMain ? null : <ButtonMain />}
+         {showIdeas ? null : <ButtonIdeas/>}
+         </div> : null }
         </div>
     )
 }

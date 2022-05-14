@@ -39,7 +39,7 @@ useEffect(() => {
 const WeatherBox = () => (
 <div className="WeatherApp">
       <div className="weather">
-      {/* <SearchSection city={city} setCity={setCity} /> */}
+      <SearchSection city={city} setCity={setCity} />
         <InfoOutput 
           yourLocation={weatherData.city}
           currentHours={weatherData.time.getHours()}
@@ -58,8 +58,8 @@ const WeatherBox = () => (
 
  
  return (
-   <div>
-  <SearchSection city={city} setCity={setCity} />  
+     <div>
+  {weatherData.ready ? null : <SearchSection city={city} setCity={setCity} /> }
   {weatherData.ready ? <WeatherBox /> : null }
   </div>
  )

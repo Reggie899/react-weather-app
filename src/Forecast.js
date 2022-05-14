@@ -39,7 +39,7 @@ export default function Forecast(props) {
     <div className="Forecast">
       <div className="card">
         <ul className="list-group list-group-flush" id="forecast">
-          <div className="cityForecast">YOUR LOCATION : {weatherData.city}</div>
+          <div className="cityForecast">YOUR LOCATION: <div style={{color: "magenta"}}>{weatherData.city} </div> </div>
           {forecastResponse.map(function (dailyForecast, index) {
             if (index > 0 && index < 6) { 
               return ( 

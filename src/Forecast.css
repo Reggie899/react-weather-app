@@ -7,31 +7,37 @@
 .Forecast,
 .cityForecast {
   /* background: #dfded1bf; */
-  border-color: #242bfd;
+  /* border-color: #242bfd; */
   /* border: 2px magenta solid; */
   padding: 1% 1% 0 1%;
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   /* border: 2px magenta solid; */
-  margin: 1.5%;
+  /* margin: 1.5%; */
 }
 
 .list-group-item {
 margin: 6%;
 min-width: 80px}
 
+/* .list-group {
+width: 80%;} */
+
 .card {
   border: none;
   background-color: #fdee24b8;
-min-width: 80px;
+ min-width: 80px;
+text-align: center;
+margin: 0 15%;
 }
 
 .cityForecast {
-  background-color: #fdef24;
+  /* background-color: #fdef24; */
   font-family: "Indie Flower", cursive;
   font-size: 1.8em;
-  padding: 3% 0;
+  padding: 3% 1%;
+  text-align: center;
 }
 
 @media (min-width: 800px) {
@@ -52,8 +58,10 @@ min-width: 80px;
   .card {
     display: flex;
     flex-direction: column;
-    border-bottom: 2px solid magenta;
+    /* border-bottom: 2px solid magenta; */
     min-width: 40%;
+    margin: 0;
+
   }
 
   .pic {

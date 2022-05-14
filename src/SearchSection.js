@@ -22,8 +22,8 @@ export default function SearchSection({ city, setCity }) {
             placeholder="Enter city here..."
             className="form-control"
             id="bigForm"
-            autofocus="on"
-            autocomplete="on"
+            // autofocus="on"
+            // autocomplete="on"
             onChange={(e) => setct(e.target.value)}
           />
                       </div>
