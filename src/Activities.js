@@ -11,47 +11,55 @@ export default function Acitivities() {
 
   console.log("icon", weatherData.icon);
 
-  useEffect(() => {
-    if (weatherData.icon === "09d") {
-      setIdea1("Texting a friend 📲");
-      setIdea2("Reading a book 📚");
-      setIdea3("Cleaning up 🧹🧽");
-    }
+  const changeIcon = () => {
     if (weatherData.icon === "01d") {
       setIdea1("Taking a walk 👣");
       setIdea2("Eating a salad 🥗");
       setIdea3("Calling a friend 📲");
     }
-    if (weatherData.icon === "04d") {
+   else if (weatherData.icon === "09d") {
+      setIdea1("Texting a friend 📲");
+      setIdea2("Reading a book 📚");
+      setIdea3("Cleaning up 🧹🧽");
+    }
+    else if (weatherData.icon === "04d") {
       console.log("hello", weatherData.icon);
       setIdea1("Buying cheese 🧀");
       setIdea2("Not texting your ex 😑☝️");
       setIdea3("Listing the top 5 things you like about yourself 👑");
-    }if (weatherData.icon === "02d") {
+    }
+    else if (weatherData.icon === "02d") {
       setIdea1("Creating a playlist 💽");
       setIdea2("Wearing something bright 👗");
       setIdea3("Writing into your diary 📖✍️");
-    }if (weatherData.icon === "03d") {
+    }
+    else if (weatherData.icon === "03d") {
       setIdea1("Dancing to a song 💃🕺");
       setIdea2("Making a card 🖌🌈");
       setIdea3("Cooking something yummy 🍝🤤");
-    }if (weatherData.icon === "11d") {
+    }
+    else if (weatherData.icon === "11d") {
       setIdea1("Hiding under a blanket 👀");
       setIdea2("Staying inside ☝️");
       setIdea3("Watching a movie 🎥🍿");
-    }if (weatherData.icon === "01n") {
-      setIdea1("Watching the stars ✨🔭");
+    }
+    else if (weatherData.icon === "01n") {
+      setIdea1("Stargazing ✨🔭");
       setIdea2("Preparing your to do list for the next day 📝");
       setIdea3("Reflecting on the day 🧐");
     } 
     //   For some reason else sets everything to those?!: 
-    //   else {
-    //   setIdea1("Sleep 😴");
-    //   setIdea2("Brushing your teeth 🪥");
-    //   setIdea3("Making a wish 🧞‍♂️");
-    // } 
-    console.log("lon:", weatherData.lon);
-    console.log("lat:", weatherData.lat);
+      else {
+      setIdea1("Sleep 😴");
+      setIdea2("Brushing your teeth 🪥");
+      setIdea3("Making a wish 🧞‍♂️");
+    } 
+  }
+
+  useEffect(() => {
+   changeIcon();
+    // console.log("lon:", weatherData.lon);
+    // console.log("lat:", weatherData.lat);
 
   }, [weatherData.icon])
 

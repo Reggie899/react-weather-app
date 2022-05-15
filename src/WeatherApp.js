@@ -13,7 +13,7 @@ export default function WeatherApp() {
   const [city, setCity] = useState("");
 
   function handleResponse(response) {
-    console.log(response.data);
+    console.log("response:", response.data);
   setWeatherData({
     ready: true, 
     temperature: response.data.main.temp, 
