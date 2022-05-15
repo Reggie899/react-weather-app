@@ -4,6 +4,7 @@ import axios from "axios";
 
 import "./WeatherApp.css";
 import SearchSection from "./SearchSection";
+import SearchSection2 from "./SearchSection2";
 import InfoOutput from "./InfoOutput";
 import ApiDatatContext from "./ApiDataContext";
 
@@ -39,7 +40,7 @@ useEffect(() => {
 const WeatherBox = () => (
 <div className="WeatherApp">
       <div className="weather">
-      <SearchSection city={city} setCity={setCity} />
+      <SearchSection2 city={city} setCity={setCity} />
         <InfoOutput 
           yourLocation={weatherData.city}
           currentHours={weatherData.time.getHours()}

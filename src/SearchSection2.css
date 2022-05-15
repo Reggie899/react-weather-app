@@ -1,0 +1,100 @@
+
+.form-control2 {
+    width: 100%;
+    height: 100%;
+    opacity: 80%;
+    padding: 1% 5%;
+    margin-left: -20px;
+
+}
+  .SearchSection2 .btn-light {
+    padding-left: 15%;
+    padding-right: 15%;
+    opacity: 80%;
+    /* background-color: blue; */
+    /* margin: 7% 1% 1% 5%; */
+    border: solid;
+    border-color: #d1dcf0;
+    background-color: #f2f6fd;
+  }
+ 
+
+  .SearchSection2 {
+      width: 95%;
+      margin-top: 3%;
+      margin-left: 3%;
+  }
+
+form {
+    /* border: 1px solid blue; */
+
+  width: 100%;
+  /* border: 2px solid magenta;  */
+  display: flex;
+  padding-left: 20px; 
+  /* flex-direction: column !important; */
+}
+
+.enterField2,
+.searchButton2 {
+  width: 50%;
+}
+
+.searchButton2 {
+    margin-left: -8%;
+}
+
+@media (min-width: 350px) {
+    .SearchSection2 .btn-light {
+      /* background-color: red; */
+      width: 200%;
+      }
+
+}
+
+@media (min-width: 400px) {
+    .SearchSection2 {
+        /* margin-left: -20%; */
+    } 
+
+}
+
+    @media (min-width: 500px) {
+
+.SearchSection2 {
+  display: flex;
+  padding: 2%;
+  width: 100%;
+  margin-top: 0;
+  margin-left: 0;
+
+  /* border: 1px solid blue; */
+}
+
+
+
+.SearchSection2 .btn-light {
+  margin: 3% 1% 1% 5%;
+  padding-left: 20%;
+  padding-right: 20%;
+ 
+}
+    }
+
+    @media (min-width: 600px) {
+        .SearchSection2 .btn-light {
+width: 180%; 
+margin-right: -90px;
+}
+
+.SearchSection2 {
+    width: 102%;
+    margin-left: 4%;
+}
+    }
+
+    @media (min-width: 1600px) {
+        .SearchSection2 {
+padding-bottom: 0;
+}
+    }
