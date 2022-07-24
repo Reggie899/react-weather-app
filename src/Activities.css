@@ -32,12 +32,22 @@ justify-content: center;
     margin: 25px 15px 15px 15px;
     opacity: 75%;
   }
-  
+
+ /* indie-flower-regular - latin */
+@font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./fonts/indie-flower-v17-latin-regular.woff2') format('woff2'), 
+       url('./fonts/indie-flower-v17-latin-regular.woff') format('woff');
+}
+
   .Activities .ideas {
     padding-top: 20px;
     padding-left: 20px;
     padding-right: -10px;
-    font-family: "Indie Flower", cursive;
+    font-family: "Indie Flower";
     font-size: 24px;
     opacity: 80%;
     box-shadow: 60%;

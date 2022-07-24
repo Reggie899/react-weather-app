@@ -5,6 +5,8 @@ import MobileVersion from "./MobileVersion";
 
 import "./styles.css";
 import WebVersion from "./WebVersion";
+// import "./fonts/indie-flower-v17-latin-regular.woff";
+// import "./fonts/indie-flower-v17-latin-regular.woff2";
 
 export default function App() {
   const [width, setWidth] = useState(window.innerWidth);
